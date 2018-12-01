@@ -2,8 +2,10 @@ pipeline {
     agent any
     stages {
         stage('Build') {
-            withPythonEnv('python3') {
-                pysh 'python --version'
+            steps {
+                withPythonEnv('python3') {
+                    pysh 'python --version'
+                }
             }
         }
     }
