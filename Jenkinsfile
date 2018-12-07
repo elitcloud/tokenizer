@@ -1,7 +1,7 @@
 pipeline {
-    agent { docker { image 'python:3.5.6' } }
+    agent { dockerfile true }
     stages {
-        stage('test') {
+        stage('Test') {
             steps {
                 sh 'python -m pytest'
             }
