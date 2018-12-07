@@ -36,4 +36,3 @@ def space_tokenizer():
 @pytest.fixture()
 def english_tokenizer():
     return EnglishTokenizer()
-
